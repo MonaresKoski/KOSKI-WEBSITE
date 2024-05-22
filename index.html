@@ -1,0 +1,319 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Matkoski A. Monares- Portfolio</title>
+    <link rel="stylesheet" type="text/css" href="styles.css">
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+            margin: 0;
+            padding: 0;
+            overflow: scroll;
+            background-color: #f2f2f2; /* Change the background color */
+        }
+        
+        .container {
+            padding: 20px;
+            text-align: center;
+        }
+        
+        nav {
+            background-color: rgba(247, 235, 235, 0.7);
+            padding: 10px 0;
+            position: fixed;
+            width: 100%;
+            top: 0;
+            z-index: 1;
+        }
+        
+        nav a {
+            color: #ffffff; /* Change the font color to white */
+            text-decoration: none;
+            padding: 10px 20px;
+        }
+        
+        nav a:hover {
+            background-color: rgba(230, 226, 218, 0.2);
+        }
+        
+        section {
+            margin: 50px auto;
+            max-width: 800px; /* Increased max-width for better readability */
+            padding: 0 20px; /* Added padding for better spacing */
+            text-align: left; /* Align text to the left */
+        }
+
+        .centered-section {
+            text-align: center;
+            margin: 0 auto;
+            max-width: 800px;
+        }
+        
+        h2 {
+            color: #ffffff; /* Change the font color to white */
+        }
+        
+        p {
+            line-height: 1.6; /* Slightly decreased line height for better readability */
+            color: #ffffff; /* Change the font color to white */
+        }
+        
+        ul {
+            list-style-type: none;
+            padding: 0;
+            color: #ffffff; /* Change the font color to white */
+        }
+        
+        ul li {
+            margin-bottom: 10px;
+        }
+        
+        .skill-bar {
+            position: relative;
+            background-color: #f0f0f0;
+            border-radius: 5px;
+            margin-bottom: 10px;
+            overflow: hidden;
+        }
+        
+        .skill-level {
+            background-color: #4caf50;
+            height: 20px;
+        }
+        
+        /* New CSS for displaying percentage */
+        .skill-bar::after {
+            content: attr(data-percent) "%"; /* Display percentage */
+            position: absolute;
+            top: 0;
+            right: 10px;
+            color: #151010;
+        }
+
+        /* Change color of h3 headings */
+        h3 {
+            color: #c77dff; /* Change the color to your desired color */
+        }
+        
+        form {
+            max-width: 600px;
+            margin: 0 auto;
+            text-align: left;
+        }
+        
+        .photo-container {
+            text-align: center;
+            margin-top: 20px;
+        }
+
+        .welcome-message {
+            text-align: center;
+            margin-top: 100px;
+        }
+
+        .welcome-message h1 {
+            color: #ffffff; /* Change the font color to white */
+            font-size: 36px;
+            font-weight: bold;
+            text-transform: uppercase;
+        }
+
+        /* Make text semi-transparent */
+        .container h1,
+        .container h2,
+        .container p,
+        .container ul,
+        .container li,
+        .container a,
+        .container label {
+            color: rgba(255, 255, 255, 0.8); /* Adjusted text color for better contrast */
+        }
+
+        /* Animated photo */
+        .animated-photo {
+            width: 300px; /* Baguhin ang laki ng larawan ayon sa iyong kagustuhan */
+            height: 300px; /* Baguhin ang taas ng larawan ayon sa iyong kagustuhan */
+            background-image: url('payong.jpg'); /* Baguhin ang URL patungo sa iyong larawan */
+            background-size: cover; /* Para masigurong ang larawan ay mag-adjust sa laki ng container */
+            background-position: center; /* Para i-center ang larawan sa container */
+            border-radius: 50%; /* Gaya ng dati, maging bilog ang larawan */
+            animation: spin 20s linear infinite; /* Idagdag ang animation */
+            margin: 0 auto; /* Itakda ang margin sa auto upang ilagay sa gitna */
+        }
+
+        .photo-grid {
+            display: grid;
+            grid-template-columns: repeat(2, 1fr); /* Two columns */
+            grid-gap: 20px; /* Gap between grid items */
+            justify-items: center; /* Center align items horizontally */
+        }
+
+        .photo-grid img {
+            width: 100%; /* Ensure images fill their grid cell */
+            height: auto; /* Maintain aspect ratio */
+            max-width: 300px; /* Limit maximum width of images */
+        }
+
+        @keyframes spin {
+            0% { transform: rotate(0deg); }
+            100% { transform: rotate(360deg); }
+        }
+    </style>
+</head>
+<body>
+
+    <div class="welcome-message">
+        <h1>Welcome to Matkoski Monares 
+                 Portfolio</h1>
+    </div>
+
+    <nav>
+        <a href="#home">Home</a>
+        <a href="#about">About</a>
+        <a href="#education">Education</a>
+        <a href="#skills">Skills</a>
+        <a href="#hobbies">Hobbies</a>
+        <a href="#photo">Photo</a>
+        <a href="#contact">Contact</a>
+    </nav>
+
+    <div class="container">
+
+        <section id="home" class="centered-section">
+            <h2>Home</h2>
+            <p>Welcome to my portfolio website! This is a place where you can learn more about me as both a Student and an individual.</p>
+        </section>
+
+        <section id="about" class="centered-section">
+            <h2>About Me</h2>
+            <p>Hey there! I'm Matkoski Monares, a student enjoying the simple life. Currently pursuing Bachelor in Science of Information Technology at North West Samar State University, I'm passionate about learning and exploring new things.</p>
+            <p>When I'm not buried in textbooks or attending classes, you'll often find me outdoors playing and bonding with friends, and soaking up nature's beauty, or curled up with a good book and a cup of tea. I believe in cherishing life's little joys and finding happiness in the everyday moments.</p>
+            <p>My journey as a student is not just about academics; it's also about personal growth, making meaningful connections, and embracing new experiences. I'm excited to see where this journey takes me and eager to make the most of every opportunity along the way.</p>
+        </section>
+
+        <video controls>
+            <source src="koskigames.mp4" type="video/mp4">
+            Your browser does not support the video tag.
+        </video>
+        
+
+        <div class="photo-container">
+            <div class="animated-photo"></div> <!-- Animated photo -->
+        </div>
+
+        <section id="education" class="centered-section">
+            <h2>Education</h2>
+            <ul>
+                <li><strong>Elementary School:</strong> [Sto Niño Central School], [Brgy Ilo Sto Niño Samar], [2007-2013]</li>
+                <li><strong>Junior High School:</strong> [Sto Nño National Highschool], [Brgy Basud Sto Niño Samar], [2014-2016]</li>
+                <li><strong>Senior High School:</strong> [Sto Niño National Highschool], [Brgy Basud Sto Niño Samar], [2017-2020]</li>
+                <li><strong>College:</strong> [Northwest Samar State University], [Rueda Street Calbayog City, Samar Philippines], [2021-2024]</li>
+            </ul>
+        </section>
+
+        <div class="container" id="skills">
+            <h2>Skills</h2>
+            <h3 style="color: #c77dff;">Technical Skills:</h3> <!-- Change color here -->
+            <ul class="skills-list">
+                <li>Styling and Layout</li>
+                <li>Graphic Design</li>
+                <li>Database Management</li>
+                <li>Data Analysis</li>
+            </ul>
+            <h3 style="color: #c77dff;">Soft Skills:</h3> <!-- Change color here -->
+            <ul class="skills-list">
+                <li>Communication</li>
+                <li>Problem Solving</li>
+                <li>Teamwork</li>
+                <li>Time Management</li>
+            </ul>
+            <h3 style="color: #c77dff;">Proficiency Levels:</h3> <!-- Change color here -->
+            <div class="skill-bar" data-percent="30">
+                <div class="skill-level" style="width: 30%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="30">
+                <div class="skill-level" style="width: 30%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="30">
+                <div class="skill-level" style="width: 30%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="45">
+                <div class="skill-level" style="width: 45%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="45">
+                <div class="skill-level" style="width: 45%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="55">
+                <div class="skill-level" style="width: 55%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="55">
+                <div class="skill-level" style="width: 55%;"></div>
+            </div>
+            <div class="skill-bar" data-percent="40">
+                <div class="skill-level" style="width: 40%;"></div>
+            </div>
+        </div>
+
+        <section id="hobbies" class="centered-section">
+            <h2>Hobbies</h2>
+            <p>Here are some of my interests and hobbies outside of School:</p>
+            <ul>
+                <li>Hiking and exploring nature</li>
+                <li>Motor riding</li>
+                <li>listening to music  (e.g., guitar, piano)</li>
+                <li>Reading novels</li>
+                <li>cooking </li>
+            </ul>
+            <p>These hobbies not only provide relaxation and enjoyment but also help me develop skills such as creativity, problem-solving, and teamwork.and also it's make me feel better when i have a problem.</p>
+        </section>
+
+        <section id="photo" class="centered-section">
+            <h2>Photo</h2>
+            <p>Family pictures:</p>
+            <div class="photo-grid">
+                <img src="family picture 1.jpg" alt="Family Photo 1">
+                <img src="family picture 2.jpg" alt="Family Photo 2">
+                <img src="family picture 3.jpg" alt="Family Photo 3">
+                <img src="family picture 4.jpg" alt="Family Photo 4">
+            </div>
+        </section>
+            
+        <div class="container" id="contact">
+            <h2>Contact</h2>
+            <p>Don't hesitate to get in touch with me through any of the following channels:</p>
+            <ul>
+                <li>Email: monaresmatkoski@gmail.com </li>
+                <li>Phone: +639704549636</li>
+                <li>Social Media:</li>
+                <ul>
+                    <li><a href="https://www.facebook.com/koski.monares?mibextid=ZbWKwL" target="_blank">Facebook</a></li>
+                    <li><a href="https://www.instagram.com/monareskoski?igsh=dDAyY3cwMDV0bnc5" target="_blank">Instagram</a></li>
+                    <!-- Add more social media links here if needed -->
+                </ul>
+            </ul>
+            <p>Whether you're interested in simply want to connect, I'm looking forward to hearing from you!</p>
+        </div>
+
+        <p>If you have any questions, job opportunities, or collaboration ideas, I'd love to hear from you!</p>
+        <p>Alternatively, you can use the form below to send me a message:</p>
+        <form action="/submit_message" method="POST">
+            <label for="name">Name:</label><br>
+            <input type="text" id="name" name="name" required><br>
+            <label for="email">Email:</label><br>
+            <input type="email" id="email" name="email" required><br>
+            <label for="message">Message:</label><br>
+            <textarea id="message" name="message" rows="4" required></textarea><br>
+            <button type="submit">Send Message</button>
+        </form>
+
+    </div>
+
+    <video autoplay muted loop style="position: fixed; bottom: 0; right: 0; min-width: 100%; min-height: 100%; width: auto; height: auto; z-index: -1;">
+        <source src="back.mp4" type="video/mp4">
+        Your browser does not support the video tag.
+    </video>
+
+</body>  
+</html>
